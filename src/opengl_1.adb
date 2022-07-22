@@ -18,6 +18,11 @@ procedure Opengl_1 is
    Window_Title : constant String := "Durian Software - Hello";
 begin
    Glfw.Init;
+
+   Ada.Text_IO.Put_Line ("Test");
+
+   Ada.Text_IO.Put_Line (Glfw.Version_String);
+
    Initialize (Main_Window, Window_Title);
    Main_Loop (Main_Window);
    Glfw.Shutdown;
