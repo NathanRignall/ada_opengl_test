@@ -23,8 +23,8 @@ procedure Initialize (Main_Window  : in out Glfw.Windows.Window;
    --  ------------------------------------------------------------------------
 
    procedure Set_Window_Hints is
-      Min_Major_Version : constant Integer := 3;
-      Minor_Version     : constant Integer := 2;
+      Min_Major_Version : constant Integer := 2;
+      Minor_Version     : constant Integer := 0;
    begin
       Glfw.Windows.Hints.Set_Minimum_OpenGL_Version
           (Min_Major_Version, Minor_Version);
